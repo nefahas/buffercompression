@@ -37,33 +37,34 @@ if you have already made remotes in the game, you can do this on the server the 
 	
 	rem:sendToServer(...) -- send type to server (eg. anything)
  
-compressionmodule.newPacket(type: string): packet
-  if you only want a packet that can read / write specific buffers on a type
+	compressionmodule.newPacket(type: string): packet
+if you only want a packet that can read / write specific buffers on a type
 
-compressionmodule.new(type: string): replicator
-  for the whole replicator and a remote handled by it (for proper communication)
-  this method calls .newPacket internally
+	compressionmodule.new(type: string): replicator
+for the whole replicator and a remote handled by it (for proper communication)
+this method calls .newPacket internally
 
 all types:
-  anything,
-  array,
-  bool,
-  brickcolor,
-  cframe,
-  color3,
-  dictionary,
-  enum,
-  float32,
-  float64,
-  instance,
-  int16,
-  int8,
-  nil,
-  string,
-  uint16,
-  uint8,
-  vector2,
-  vector3
+
+	  anything,
+	  array,
+	  bool,
+	  brickcolor,
+	  cframe,
+	  color3,
+	  dictionary,
+	  enum,
+	  float32,
+	  float64,
+	  instance,
+	  int16,
+	  int8,
+	  nil,
+	  string,
+	  uint16,
+	  uint8,
+	  vector2,
+	  vector3
 
 when creating a compression replicator, a specific type is to be specified (above: 'anything' in the .new call)
 if you want to send whatever you want, use the anything type, otherwise it will try to compress only on the specific type given
