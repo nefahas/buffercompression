@@ -36,13 +36,17 @@ if you have already made remotes in the game, you can do this on the server the 
 	end)
 	
 	rem:sendToServer(...) -- send type to server (eg. anything)
+
  
+if you only want a packet that can read / write specific buffers on a type:
+
 	compressionmodule.newPacket(type: string): packet
-if you only want a packet that can read / write specific buffers on a type
+
+
+for the whole replicator and a remote handled by it (for proper server <-> client communication)
+this method calls .newPacket internally
 
 	compressionmodule.new(type: string): replicator
-for the whole replicator and a remote handled by it (for proper communication)
-this method calls .newPacket internally
 
 all types:
 
