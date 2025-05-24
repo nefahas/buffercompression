@@ -1,4 +1,6 @@
 # buffercompression
+https://create.roblox.com/store/asset/102777072380082/Compression
+
 roblox remote event / remote function compression based on buffers
 not very documented or exported much since i made this for myself and for entertainment, but it works like this
 
