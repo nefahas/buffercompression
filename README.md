@@ -57,27 +57,27 @@ this method calls .newPacket internally
 
 all types supported:
 
-	anything,
-	array,
-	bool,
-	brickcolor,
-	cframe,
-	color3,
-	dictionary,
-	enum,
-	float32,
-	float64,
-	instance,
-	int16,
-	int8,
-	nil,
-	string,
-	uint16,
-	uint8,
-	vector2,
-	vector3,
- 	udim2,
-  	udim
+	anything, (eg: :sendToServer('hi', {}, true, false, 100, workspace))
+	array, (eg: :sendToserver({Hi, true, false, 10}) (number indexes)
+	bool, (eg: :sendToServer(true))
+	brickcolor, (eg: :sendToServer(BrickColor.White()))
+	cframe, (eg: :sendToServer(CFrame.identity))
+	color3, (eg: :sendToServer(Color3.new(1, 0.5, 0.25)))
+	dictionary, (eg: :sendToServer({hi = true, wow = {hey = false}, [workspace] = 'Hi'}))
+	enum, (eg: :sendToServer(Enum.UserInputType.MouseButton1))
+	float32, (eg: :sendToServer(3.14159265359)) -- 32 bit
+	float64, (eg :sendTosServer(3.14159265359)) -- 64 bit equiv of float32
+	instance, (eg :sendToServer(workspace))
+	int16, (eg: :sendToServer(32767))
+	int8, (eg: :sendToServer(127))
+	nil, (eg: :sendToServer())
+	string, (eg: :sendToServer('Hi'))
+	uint16, (eg: :sendToServer(65535))
+	uint8, (eg: :sendToServer(255))
+	vector2, (eg: :sendToServer(Vector2.zero))
+	vector3, (eg: :sendToServer(Vector3.zero))
+ 	udim2, (eg: :sendToServer(UDim2.new(0.5, 100, 0.25, 100)))
+  	udim (eg:  :sendToServer(UDim.new(0.5, 100)))
 
 when creating a compression replicator, a specific type is to be specified (above: 'anything' in the .new call)
 
