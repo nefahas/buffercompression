@@ -78,5 +78,6 @@ when creating a compression replicator, a specific type is to be specified (abov
 if you want to send whatever you want, use the anything type, otherwise it will try to compress only on the specific type given
 ^ eg: if i specify dictionary but send a number, itll fail
 
-nothing is really pcalled or handles errors, i try to just invalidate anything but most of the time it errors so you'll know
+nothing is really pcalled or handles errors, i try to just invalidate anything but most of the time it errors so you'll know if something is wrong
+
 this isnt really professionally made at all if u cant tell and i dont really like how some of it is scripted (like how i make new packets for arrays just to read it)
