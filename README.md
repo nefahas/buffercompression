@@ -50,27 +50,29 @@ this method calls .newPacket internally
 
 	compressionmodule.new(type: string): replicator
 
-all types:
+all types supported:
 
-	  anything,
-	  array,
-	  bool,
-	  brickcolor,
-	  cframe,
-	  color3,
-	  dictionary,
-	  enum,
-	  float32,
-	  float64,
-	  instance,
-	  int16,
-	  int8,
-	  nil,
-	  string,
-	  uint16,
-	  uint8,
-	  vector2,
-	  vector3
+	anything,
+	array,
+	bool,
+	brickcolor,
+	cframe,
+	color3,
+	dictionary,
+	enum,
+	float32,
+	float64,
+	instance,
+	int16,
+	int8,
+	nil,
+	string,
+	uint16,
+	uint8,
+	vector2,
+	vector3,
+ 	udim2,
+  	udim
 
 when creating a compression replicator, a specific type is to be specified (above: 'anything' in the .new call)
 if you want to send whatever you want, use the anything type, otherwise it will try to compress only on the specific type given
